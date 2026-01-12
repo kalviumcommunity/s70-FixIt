@@ -2,6 +2,14 @@ Problem:
 
 Maintenance issues are reported verbally and forgotten.
 
+project name:
+
+FixIt
+
+Team name:
+
+Wardex
+
 Solution:
 
 Residents raise complaints, staff track & resolve them.
