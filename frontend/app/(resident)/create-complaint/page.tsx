@@ -114,7 +114,7 @@ export default function CreateComplaintPage() {
                                         className="flex h-12 w-full rounded-md border border-border/60 bg-white/40 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all font-medium"
                                         required
                                     >
-                                        <option value="" className="bg-card">Select Domain</option>
+                                        <option value="" className="bg-card">Select Hostel Area</option>
                                         <option value="plumbing" className="bg-card">Plumbing</option>
                                         <option value="electrical" className="bg-card">Electrical</option>
                                         <option value="carpentry" className="bg-card">Carpentry</option>
@@ -208,9 +208,9 @@ export default function CreateComplaintPage() {
                                 {isLoading ? (
                                     <div className="flex items-center gap-2">
                                         <Loader2 className="h-5 w-5 animate-spin" />
-                                        Dispatching...
+                                        Submitting...
                                     </div>
-                                ) : "Submit Dispatch Request"}
+                                ) : "Submit Report Request"}
                             </Button>
                         </div>
                     </form>

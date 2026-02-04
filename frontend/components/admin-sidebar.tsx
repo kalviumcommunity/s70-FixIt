@@ -16,7 +16,7 @@ export function AdminSidebar() {
             icon: LayoutDashboard,
         },
         {
-            href: "/admin/staff",
+            href: "/admin/assignments",
             label: "Staff Assignment",
             icon: Users,
         },

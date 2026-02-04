@@ -40,9 +40,9 @@ export default function SignupPage() {
                         </div>
                         <span className="text-xl font-bold text-gradient">FixIt</span>
                     </div>
-                    <CardTitle className="text-2xl text-center tracking-tight font-bold">Create an account</CardTitle>
+                    <CardTitle className="text-2xl text-center tracking-tight font-bold">Hostel Registration</CardTitle>
                     <CardDescription className="text-center">
-                        Enter your information to get started
+                        Enter your information to join the hostel community
                     </CardDescription>
                 </CardHeader>
                 <CardContent>

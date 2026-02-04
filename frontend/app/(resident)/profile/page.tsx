@@ -30,8 +30,8 @@ export default function ProfilePage() {
         <div className="space-y-6 animate-fade-in">
             <div className="flex items-center justify-between">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight text-gradient">Profile Settings</h1>
-                    <p className="text-muted-foreground">Manage your account information and preferences.</p>
+                    <h1 className="text-3xl font-bold tracking-tight text-gradient">Hosteler Profile</h1>
+                    <p className="text-muted-foreground">Manage your hostel details and preferences.</p>
                 </div>
                 {!isEditing && (
                     <Button onClick={() => setIsEditing(true)}>Edit Profile</Button>
@@ -51,8 +51,8 @@ export default function ProfilePage() {
                                 </button>
                             </div>
                             <div className="text-center">
-                                <h2 className="text-xl font-bold tracking-tight">John Doe</h2>
-                                <p className="text-sm text-muted-foreground">Resident • Ward 12, BLK 4</p>
+                                <h2 className="text-xl font-bold tracking-tight">Bhuvana</h2>
+                                <p className="text-sm text-muted-foreground">Hosteler • Ward 12, BLK 4</p>
                             </div>
                             <div className="flex items-center gap-2 px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-xs font-medium">
                                 <BadgeCheck className="h-3.5 w-3.5" />
@@ -119,10 +119,10 @@ export default function ProfilePage() {
                                     </div>
                                 </div>
                                 <div className="space-y-2 text-muted-foreground">
-                                    <Label className="text-foreground">Account Role</Label>
+                                    <Label className="text-foreground">Hostel Role</Label>
                                     <div className="flex items-center gap-2 h-10 px-3 rounded-md bg-muted/30 border border-transparent text-sm">
                                         <Shield className="h-4 w-4" />
-                                        Resident User
+                                        Hosteler User
                                     </div>
                                 </div>
                             </div>

@@ -10,26 +10,26 @@ import {
 } from "@/components/ui/card"
 import {
     Wrench,
-    Droplets,
-    Zap,
     Shield,
     Trash2,
     Hammer,
     ArrowRight,
     Search,
-    Filter
+    Filter,
+    Utensils,
+    Wifi
 } from "lucide-react"
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 
 const departments = [
-    { id: "electrical", name: "Electrician", icon: Zap, color: "text-amber-600", bg: "bg-amber-600/10", count: 12, pending: 4 },
-    { id: "plumbing", name: "Plumber", icon: Droplets, color: "text-primary", bg: "bg-primary/10", count: 8, pending: 2 },
-    { id: "carpentry", name: "Carpenter", icon: Hammer, color: "text-orange-600", bg: "bg-orange-600/10", count: 5, pending: 1 },
-    { id: "cleaning", name: "Cleaning", icon: Trash2, color: "text-emerald-600", bg: "bg-emerald-600/10", count: 15, pending: 3 },
-    { id: "security", name: "Security", icon: Shield, color: "text-red-600", bg: "bg-red-600/10", count: 3, pending: 0 },
-    { id: "hvac", name: "HVAC", icon: Wrench, color: "text-indigo-600", bg: "bg-indigo-600/10", count: 6, pending: 2 },
+    { id: "warden", name: "Hostel Warden", icon: Shield, color: "text-red-600", bg: "bg-red-600/10", count: 3, pending: 1 },
+    { id: "mess", name: "Mess Committee", icon: Utensils, color: "text-orange-600", bg: "bg-orange-600/10", count: 8, pending: 2 },
+    { id: "technical", name: "IT/Technical Team", icon: Wifi, color: "text-blue-600", bg: "bg-blue-600/10", count: 12, pending: 4 },
+    { id: "hvac", name: "Water & Power", icon: Wrench, color: "text-indigo-600", bg: "bg-indigo-600/10", count: 6, pending: 2 },
+    { id: "cleaning", name: "Cleaning Staff", icon: Trash2, color: "text-emerald-600", bg: "bg-emerald-600/10", count: 15, pending: 3 },
+    { id: "carpentry", name: "Locker & Furniture", icon: Hammer, color: "text-amber-600", bg: "bg-amber-600/10", count: 5, pending: 0 },
 ]
 
 const recentStats = [
@@ -44,8 +44,8 @@ export default function AdminDashboardPage() {
         <div className="flex flex-col gap-8 animate-fade-in pb-10 px-4 md:px-0">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h1 className="text-4xl font-extrabold tracking-tight text-gradient">FixIt Commander</h1>
-                    <p className="text-muted-foreground mt-1 text-lg">Central control for community facility operations.</p>
+                    <h1 className="text-4xl font-extrabold tracking-tight text-gradient">Hostel Commander</h1>
+                    <p className="text-muted-foreground mt-1 text-lg">Central control for hostel and student residence operations.</p>
                 </div>
                 <div className="flex items-center gap-3">
                     <div className="relative w-64">
@@ -129,8 +129,8 @@ export default function AdminDashboardPage() {
                                     <div className="flex items-center gap-4">
                                         <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">#FL</div>
                                         <div>
-                                            <p className="text-sm font-semibold tracking-tight">Fuse Box Melted - Block B</p>
-                                            <p className="text-xs text-muted-foreground">Electrical • High Priority • 2h ago</p>
+                                            <p className="text-sm font-semibold tracking-tight">Hostel WiFi Deadzone - Block B</p>
+                                            <p className="text-xs text-muted-foreground">IT Team • High Priority • 2h ago</p>
                                         </div>
                                     </div>
                                     <Button variant="secondary" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">Assign</Button>
@@ -157,7 +157,7 @@ export default function AdminDashboardPage() {
                         </div>
                         <div className="space-y-2">
                             <div className="flex justify-between text-xs font-semibold mb-1 uppercase tracking-wider text-muted-foreground">
-                                <span>Resident Satisfaction</span>
+                                <span>Student Satisfaction</span>
                                 <span>92%</span>
                             </div>
                             <div className="h-1.5 w-full bg-muted/30 rounded-full overflow-hidden">

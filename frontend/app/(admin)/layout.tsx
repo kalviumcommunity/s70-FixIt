@@ -34,7 +34,7 @@ export default function AdminLayout({
                         <span className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/70">Terminal Intelligence Active</span>
                     </div>
                     <div className="flex items-center gap-5 ml-auto">
-                        <NotificationCenter />
+                        <NotificationCenter isAdmin />
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <div className="flex items-center gap-3 active:scale-95 transition-transform cursor-pointer group">

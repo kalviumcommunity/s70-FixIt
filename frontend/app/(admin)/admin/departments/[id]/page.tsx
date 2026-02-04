@@ -19,6 +19,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
+import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 
 interface Complaint {
@@ -151,14 +152,14 @@ export default async function DepartmentDetailedView({ params }: { params: Promi
                                         </div>
                                     </td>
                                     <td className="p-4">
-                                        <span className={cn(
-                                            "inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold border",
-                                            complaint.status === "Urgent" ? "bg-red-500/10 text-red-500 border-red-500/20 shadow-[0_0_10px_rgba(239,68,68,0.1)]" :
-                                                complaint.status === "In Progress" ? "bg-amber-500/10 text-amber-500 border-amber-500/20" :
-                                                    "bg-emerald-500/10 text-emerald-500 border-emerald-500/20"
+                                        <Badge variant="outline" className={cn(
+                                            "border-0",
+                                            complaint.status === "Urgent" ? "bg-red-500/10 text-red-500 shadow-[0_0_10px_rgba(239,68,68,0.1)]" :
+                                                complaint.status === "In Progress" ? "bg-amber-500/10 text-amber-500" :
+                                                    "bg-emerald-500/10 text-emerald-500"
                                         )}>
                                             {complaint.status.toUpperCase()}
-                                        </span>
+                                        </Badge>
                                     </td>
                                     <td className="p-4 text-right">
                                         <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
