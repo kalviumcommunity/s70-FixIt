@@ -1,0 +1,12 @@
+import mongoose from "mongoose";
+
+const feedbackSchema = new mongoose.Schema({
+  complaint: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Complaint"
+  },
+  rating: { type: Number, min: 1, max: 5 },
+  comment: String
+}, { timestamps: true });
+
+export default mongoose.model("Feedback", feedbackSchema);
