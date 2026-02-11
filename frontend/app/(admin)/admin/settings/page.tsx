@@ -14,16 +14,12 @@ import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Badge } from "@/components/ui/badge"
 import {
-    Settings,
     Globe,
-    Shield,
     Users,
     Palette,
     Save,
     MoreHorizontal,
-    Plus,
-    AlertTriangle,
-    CheckCircle2
+    Plus
 } from "lucide-react"
 import {
     DropdownMenu,

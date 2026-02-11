@@ -5,8 +5,7 @@ import {
     Card,
     CardContent,
     CardHeader,
-    CardTitle,
-    CardDescription
+    CardTitle
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -16,12 +15,10 @@ import {
     SheetDescription,
     SheetHeader,
     SheetTitle,
-    SheetTrigger,
-    SheetClose
+    SheetTrigger
 } from "@/components/ui/sheet"
 import {
     Users,
-    Clock,
     CheckCircle2,
     AlertCircle,
     Search,
@@ -46,7 +43,7 @@ interface Complaint {
     date: string
     category: string
     categorySlug: string
-    icon: any
+    icon: React.ComponentType<{ className?: string }>
     color: string
     bg: string
     assignedTo?: string
@@ -58,7 +55,6 @@ export default function AssignmentsPage() {
         initialComplaints.filter(c => c.status !== "Resolved").map(c => ({ ...c }))
     )
     const [technicians, setTechnicians] = useState<Technician[]>(TECHNICIANS)
-    const [selectedComplaintId, setSelectedComplaintId] = useState<string | null>(null)
     const [searchQuery, setSearchQuery] = useState("")
 
     const handleAssign = (complaintId: string, techId: string) => {

@@ -12,19 +12,10 @@ import {
     Clock,
     CheckCircle2,
     Wrench,
-    Droplets,
-    Zap,
-    Hammer,
-    Shield,
-    ChevronRight,
-    SearchX,
-    LayoutDashboard,
-    Utensils,
-    Wifi
+    LayoutDashboard
 } from "lucide-react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
-import { useState } from "react"
 
 import { CATEGORIES } from "@/lib/mock-data"
 
